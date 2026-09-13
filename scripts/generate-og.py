@@ -137,7 +137,7 @@ cx = rx + rw // 2
 f_sub = ImageFont.truetype('C:/Windows/Fonts/georgia.ttf', 13)
 f_host = ImageFont.truetype('C:/Windows/Fonts/georgiab.ttf', 17)
 f_invite = ImageFont.truetype('C:/Windows/Fonts/timesi.ttf', 16)
-f_name = ImageFont.truetype('C:/Windows/Fonts/georgiab.ttf', 44)
+f_name = ImageFont.truetype('C:/Windows/Fonts/georgiab.ttf', 38)
 f_date = ImageFont.truetype('C:/Windows/Fonts/georgiab.ttf', 18)
 f_events = ImageFont.truetype('C:/Windows/Fonts/georgia.ttf', 15)
 f_venues = ImageFont.truetype('C:/Windows/Fonts/georgia.ttf', 14)
@@ -172,11 +172,11 @@ bb = draw.textbbox((0, 0), inv, font=f_invite)
 draw.text((cx - (bb[2] - bb[0]) // 2, y), inv, font=f_invite, fill=text_muted)
 y += 26
 
-# Couple Names
-names_line = "AFRIDI  &  TAMANNA"
+# Couple Full Names
+names_line = "AFRIDI KHAN  &  TAMANNA ALI"
 bb = draw.textbbox((0, 0), names_line, font=f_name)
 draw.text((cx - (bb[2] - bb[0]) // 2, y), names_line, font=f_name, fill=burgundy)
-y += 56
+y += 54
 
 # Vector Gold Flourish Divider
 div_half = 140
@@ -208,7 +208,7 @@ bb = draw.textbbox((0, 0), ven_str, font=f_venues)
 draw.text((cx - (bb[2] - bb[0]) // 2, y), ven_str, font=f_venues, fill=text_muted)
 y += 28
 
-# Production Link Badge: updated to actual deployed domain
+# Production Link Badge
 badge_str = "afridi-weds-tamanna.invitingyou.top"
 bb = draw.textbbox((0, 0), badge_str, font=f_badge)
 bw = bb[2] - bb[0] + 28
@@ -225,4 +225,4 @@ base.save(png_path, 'PNG', optimize=True)
 rgb = base.convert('RGB')
 rgb.save(jpg_path, 'JPEG', quality=95)
 
-print('Generated bespoke monogram OG image with invitingyou.top domain:', png_path)
+print('Successfully regenerated perfect OG image with full names!')
