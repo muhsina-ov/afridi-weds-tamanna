@@ -73,39 +73,27 @@ seal_size = 146
 seal_img = Image.new('RGBA', (seal_size, seal_size), (0, 0, 0, 0))
 s_draw = ImageDraw.Draw(seal_img)
 
-# Multi-layered seal shadow and body
 scx, scy = seal_size // 2, seal_size // 2
 sr = 66
-# Outer wax scallop / lip
 s_draw.ellipse([scx - sr, scy - sr, scx + sr, scy + sr], fill=(110, 18, 32, 255), outline=(75, 12, 22, 255), width=3)
-# Inner bevel rim
 s_draw.ellipse([scx - sr + 7, scy - sr + 7, scx + sr - 7, scy + sr - 7], fill=(130, 24, 40, 255), outline=gold_deep, width=2)
-# Center stamp bed
 s_draw.ellipse([scx - sr + 14, scy - sr + 14, scx + sr - 14, scy + sr - 14], fill=(95, 14, 25, 255))
 s_draw.ellipse([scx - sr + 17, scy - sr + 17, scx + sr - 17, scy + sr - 17], outline=gold_light, width=1)
 
-# Monogram "A & T" on the wax seal
 f_seal_mono = ImageFont.truetype('C:/Windows/Fonts/georgiab.ttf', 30)
-f_seal_sub = ImageFont.truetype('C:/Windows/Fonts/georgia.ttf', 10)
 
 sb = s_draw.textbbox((0, 0), "A & T", font=f_seal_mono)
-# Embossed effect (shadow + highlight)
 s_draw.text((scx - (sb[2] - sb[0]) // 2 + 1, scy - (sb[3] - sb[1]) // 2 - 2), "A & T", font=f_seal_mono, fill=(50, 8, 14, 255))
 s_draw.text((scx - (sb[2] - sb[0]) // 2, scy - (sb[3] - sb[1]) // 2 - 3), "A & T", font=f_seal_mono, fill=gold_glow)
 
-# Flanking decorative laurels
 s_draw.line([(scx - 30, scy + 22), (scx + 30, scy + 22)], fill=gold_light, width=1)
 s_draw.polygon([(scx, scy + 19), (scx + 3, scy + 22), (scx, scy + 25), (scx - 3, scy + 22)], fill=gold_glow)
-
-# Crown motif above
 s_draw.polygon([(scx - 12, scy - 25), (scx - 6, scy - 29), (scx, scy - 24), (scx + 6, scy - 29), (scx + 12, scy - 25), (scx, scy - 20)], fill=gold_glow)
 
-# Paste seal into arch
 sx = (fw - seal_size) // 2
 sy = (fh - seal_size) // 2 - 35
 arch_bg.paste(seal_img, (sx, sy), seal_img)
 
-# Create arch mask
 arch_mask = Image.new('L', (fw, fh), 0)
 am_draw = ImageDraw.Draw(arch_mask)
 am_draw.pieslice([0, 0, fw, fw], 180, 360, fill=255)
@@ -114,7 +102,6 @@ am_draw.rectangle([0, r, fw, fh], fill=255)
 arch_composite = Image.new('RGBA', (fw, fh), (0, 0, 0, 0))
 arch_composite.paste(arch_bg, (0, 0), arch_mask)
 
-# Soft shadow behind arch
 shadow = Image.new('RGBA', (width, height), (0, 0, 0, 0))
 sdraw = ImageDraw.Draw(shadow)
 sdraw.pieslice([fx - 4, fy, fx + fw + 4, fy + fw + 8], 180, 360, fill=(45, 25, 15, 60))
@@ -122,10 +109,8 @@ sdraw.rectangle([fx - 4, fy + r, fx + fw + 4, fy + fh + 8], fill=(45, 25, 15, 60
 shadow = shadow.filter(ImageFilter.GaussianBlur(14))
 base = Image.alpha_composite(base, shadow)
 
-# Paste arch onto base
 base.paste(arch_composite, (fx, fy), arch_composite)
 
-# Draw gold borders over arch
 overlay = Image.new('RGBA', (width, height), (0, 0, 0, 0))
 odraw = ImageDraw.Draw(overlay)
 
@@ -149,7 +134,6 @@ rw = 670
 cx = rx + rw // 2
 
 # Fonts
-f_bismillah = ImageFont.truetype('C:/Windows/Fonts/georgia.ttf', 13)
 f_sub = ImageFont.truetype('C:/Windows/Fonts/georgia.ttf', 13)
 f_host = ImageFont.truetype('C:/Windows/Fonts/georgiab.ttf', 17)
 f_invite = ImageFont.truetype('C:/Windows/Fonts/timesi.ttf', 16)
@@ -224,8 +208,8 @@ bb = draw.textbbox((0, 0), ven_str, font=f_venues)
 draw.text((cx - (bb[2] - bb[0]) // 2, y), ven_str, font=f_venues, fill=text_muted)
 y += 28
 
-# Production Link Badge
-badge_str = "afridi-weds-tamanna.pages.dev"
+# Production Link Badge: updated to actual deployed domain
+badge_str = "afridi-weds-tamanna.invitingyou.top"
 bb = draw.textbbox((0, 0), badge_str, font=f_badge)
 bw = bb[2] - bb[0] + 28
 bh = 26
@@ -241,4 +225,4 @@ base.save(png_path, 'PNG', optimize=True)
 rgb = base.convert('RGB')
 rgb.save(jpg_path, 'JPEG', quality=95)
 
-print('Generated bespoke monogram OG image:', png_path)
+print('Generated bespoke monogram OG image with invitingyou.top domain:', png_path)
