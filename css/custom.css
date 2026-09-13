@@ -1,5 +1,22 @@
 /* Custom styles for Afridi & Tamanna Wedding Template */
 
+/* Centered & Reframed Family Announcement Card */
+#rec2487446043 .tn-elem[data-elem-id="1780748008617000005"] {
+  width: 92% !important;
+  max-width: 440px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  top: 1035px !important;
+  text-align: center !important;
+}
+
+#rec2487446043 .tn-elem[data-elem-id="1780748008617000005"] .tn-atom {
+  font-size: 15px !important;
+  line-height: 1.45 !important;
+  white-space: normal !important;
+  text-align: center !important;
+}
+
 /* Venue Switcher Tabs Polish */
 #vtab0, #vtab1, #vtab2 {
   transition: all 0.25s ease-in-out;
