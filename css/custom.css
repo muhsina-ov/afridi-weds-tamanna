@@ -101,7 +101,7 @@ html {
   }
 }
 
-/* Fix Ceremony Venues Subtitle Spacing and Alignment (Never Overlap) */
+/* Fix Ceremony Venues Subtitle Spacing, Typography & Centering */
 #rec2487446153 .tn-elem[data-elem-id="1772804808869"] {
   width: 92% !important;
   max-width: 400px !important;
@@ -110,7 +110,7 @@ html {
   margin-left: auto !important;
   margin-right: auto !important;
   text-align: center !important;
-  top: 106px !important;
+  top: 104px !important;
   height: auto !important;
   display: block !important;
 }
@@ -121,24 +121,48 @@ html {
   white-space: normal !important;
 }
 
+#rec2487446153 .tn-elem[data-elem-id="1772804808869"] .tn-atom div:first-child {
+  font-family: 'Ovo', Georgia, serif !important;
+  font-size: 19px !important;
+  line-height: 1.3 !important;
+  color: #6c513f !important;
+  font-weight: 400 !important;
+  margin-bottom: 6px !important;
+}
+
+#rec2487446153 .tn-elem[data-elem-id="1772804808869"] .tn-atom div:last-child {
+  font-family: 'Cinzel', Georgia, serif !important;
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+  color: #a67d2b !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+}
+
 #rec2487446153 .tn-elem[data-elem-id="1772813480591000001"] {
   display: none !important;
 }
 
 @media screen and (max-width: 480px) {
   #rec2487446153 .tn-elem[data-elem-id="1772804808869"] .tn-atom div:first-child {
-    font-size: 18px !important;
+    font-size: 17px !important;
   }
   #rec2487446153 .tn-elem[data-elem-id="1772804808869"] .tn-atom div:last-child {
-    font-size: 15px !important;
+    font-size: 11px !important;
   }
 }
 
 /* Schedule of Events (Only 2 Events: Nikah & Reception) */
+#rec2487446103 {
+  overflow: hidden !important;
+}
+
 #rec2487446103 .t396__artboard,
 #rec2487446103 .t396__filter,
 #rec2487446103 .t396__carrier {
-  height: 380px !important;
+  height: 370px !important;
+  overflow: hidden !important;
 }
 
 /* Event 1: Nikah Ceremony */
@@ -156,9 +180,9 @@ html {
   text-align: left !important;
 }
 
-/* Rose Center Divider */
+/* Hide Rogue Scrolling Rose */
 #rec2487446103 .tn-elem[data-elem-id="1773602024985"] {
-  top: 216px !important;
+  display: none !important;
 }
 
 /* Event 2: Grand Reception */
@@ -179,8 +203,14 @@ html {
 /* Timeline Vertical Line */
 #rec2487446103 .tn-elem[data-elem-id="1772803124037"] {
   top: 155px !important;
-  height: 160px !important;
+  height: 135px !important;
+  max-height: 135px !important;
   overflow: hidden !important;
+}
+
+#rec2487446103 .tn-elem[data-elem-id="1772803124037"] svg {
+  height: 135px !important;
+  max-height: 135px !important;
 }
 
 /* Responsive Mobile Layout for Schedule of Events */
@@ -202,5 +232,6 @@ html {
     width: 130px !important;
   }
 }
+
 
 
