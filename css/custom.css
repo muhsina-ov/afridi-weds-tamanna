@@ -22,35 +22,80 @@
   display: none !important;
 }
 
-/* Hero Couple Full Names Responsive Typography */
+/* Hide Separate Overlapping Ampersand */
+#rec2487446043 .tn-elem[data-elem-id="176340390975774690"] {
+  display: none !important;
+}
+
+/* Hero Couple Names Reframed in Royal Maroon */
 #rec2487446043 .tn-elem[data-elem-id="1763402147625"] {
-  width: 90% !important;
+  width: 92% !important;
   max-width: 600px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   text-align: center !important;
+  top: 250px !important;
+  height: auto !important;
+  display: block !important;
 }
 
 #rec2487446043 .tn-elem[data-elem-id="1763402147625"] .tn-atom {
-  font-size: 58px !important;
-  line-height: 0.9 !important;
-  white-space: nowrap !important;
   text-align: center !important;
+  color: #5a0f1b !important;
+  width: 100% !important;
+  white-space: normal !important;
+}
+
+#rec2487446043 .hero-groom-name,
+#rec2487446043 .hero-bride-name {
+  font-family: 'Webgency', Arial, sans-serif !important;
+  font-weight: 800 !important;
+  color: #5a0f1b !important;
+  font-size: 56px !important;
+  line-height: 1.05 !important;
+  text-align: center !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
+}
+
+#rec2487446043 .hero-ampersand {
+  font-family: 'NewFonts', Arial, sans-serif !important;
+  font-weight: 300 !important;
+  color: #5a0f1b !important;
+  font-size: 32px !important;
+  line-height: 1.1 !important;
+  margin: 4px 0 !important;
+  text-align: center !important;
+  opacity: 0.95;
 }
 
 @media screen and (max-width: 640px) {
-  #rec2487446043 .tn-elem[data-elem-id="1763402147625"] .tn-atom {
-    font-size: 42px !important;
-    line-height: 0.9 !important;
+  #rec2487446043 .hero-groom-name,
+  #rec2487446043 .hero-bride-name {
+    font-size: 44px !important;
+    line-height: 1.05 !important;
+  }
+  #rec2487446043 .hero-ampersand {
+    font-size: 28px !important;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #rec2487446043 .tn-elem[data-elem-id="1763402147625"] .tn-atom {
-    font-size: 32px !important;
-    line-height: 0.92 !important;
+  #rec2487446043 .hero-groom-name,
+  #rec2487446043 .hero-bride-name {
+    font-size: 38px !important;
+    line-height: 1.05 !important;
+  }
+  #rec2487446043 .hero-ampersand {
+    font-size: 24px !important;
+    margin: 2px 0 !important;
+  }
+  #rec2487446043 .tn-elem[data-elem-id="1763402147625"] {
+    top: 245px !important;
   }
 }
+
 
 /* Venue Switcher Tabs Polish */
 #vtab0, #vtab1, #vtab2 {
