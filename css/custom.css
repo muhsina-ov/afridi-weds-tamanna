@@ -76,3 +76,64 @@
 html {
   scroll-behavior: smooth;
 }
+
+/* Remove Venue Architectural Illustration & Adjust Section Height */
+#rec2487446153 .tn-elem[data-elem-id="1782312310182000001"] {
+  display: none !important;
+}
+
+#rec2487446153 .t396__artboard,
+#rec2487446153 .t396__filter,
+#rec2487446153 .t396__carrier {
+  height: 185px !important;
+}
+
+@media screen and (max-width: 640px) {
+  #rec2487446153 .t396__artboard,
+  #rec2487446153 .t396__filter,
+  #rec2487446153 .t396__carrier {
+    height: 180px !important;
+  }
+}
+
+/* Fix Ceremony Venues Subtitle Spacing and Alignment on Mobile */
+#rec2487446153 .tn-elem[data-elem-id="1772804808869"] {
+  width: 90% !important;
+  max-width: 380px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-align: center !important;
+  top: 108px !important;
+}
+
+#rec2487446153 .tn-elem[data-elem-id="1772804808869"] .tn-atom {
+  font-size: 18px !important;
+  line-height: 1.3 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+#rec2487446153 .tn-elem[data-elem-id="1772813480591000001"] {
+  width: 90% !important;
+  max-width: 380px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  text-align: center !important;
+  top: 138px !important;
+}
+
+#rec2487446153 .tn-elem[data-elem-id="1772813480591000001"] .tn-atom {
+  font-size: 15px !important;
+  line-height: 1.3 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+}
+
+@media screen and (max-width: 480px) {
+  #rec2487446153 .tn-elem[data-elem-id="1772804808869"] .tn-atom {
+    font-size: 16px !important;
+  }
+  #rec2487446153 .tn-elem[data-elem-id="1772813480591000001"] .tn-atom {
+    font-size: 14px !important;
+  }
+}
