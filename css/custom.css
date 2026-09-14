@@ -17,6 +17,11 @@
   text-align: center !important;
 }
 
+/* Hide Front Page Dates */
+#rec2487446043 .tn-elem[data-elem-id="176340401720454780"] {
+  display: none !important;
+}
+
 /* Hero Couple Full Names Responsive Typography */
 #rec2487446043 .tn-elem[data-elem-id="1763402147625"] {
   width: 90% !important;
