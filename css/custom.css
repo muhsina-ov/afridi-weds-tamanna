@@ -134,3 +134,73 @@ html {
   }
 }
 
+/* Schedule of Events (Only 2 Events: Nikah & Reception) */
+#rec2487446103 .t396__artboard,
+#rec2487446103 .t396__filter,
+#rec2487446103 .t396__carrier {
+  height: 380px !important;
+}
+
+/* Event 1: Nikah Ceremony */
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000003"] {
+  top: 156px !important;
+}
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000004"] {
+  top: 172px !important;
+}
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000002"] {
+  top: 148px !important;
+  width: 250px !important;
+}
+#rec2487446103 .tn-elem[data-elem-id="1772803288793000002"] .tn-atom {
+  text-align: left !important;
+}
+
+/* Rose Center Divider */
+#rec2487446103 .tn-elem[data-elem-id="1773602024985"] {
+  top: 216px !important;
+}
+
+/* Event 2: Grand Reception */
+#rec2487446103 .tn-elem[data-elem-id="1782315588274000002"] {
+  top: 276px !important;
+}
+#rec2487446103 .tn-elem[data-elem-id="1772803465944000007"] {
+  top: 292px !important;
+}
+#rec2487446103 .tn-elem[data-elem-id="1782315605037000003"] {
+  top: 268px !important;
+  width: 250px !important;
+}
+#rec2487446103 .tn-elem[data-elem-id="1782315605037000003"] .tn-atom {
+  text-align: left !important;
+}
+
+/* Timeline Vertical Line */
+#rec2487446103 .tn-elem[data-elem-id="1772803124037"] {
+  top: 155px !important;
+  height: 160px !important;
+  overflow: hidden !important;
+}
+
+/* Responsive Mobile Layout for Schedule of Events */
+@media screen and (max-width: 480px) {
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000002"] {
+    width: 145px !important;
+    left: calc(50% - 160px + 172px) !important;
+  }
+  #rec2487446103 .tn-elem[data-elem-id="1782315605037000003"] {
+    width: 145px !important;
+    left: calc(50% - 160px + 172px) !important;
+  }
+  #rec2487446103 .tn-elem[data-elem-id="1772803288793000003"] {
+    left: calc(50% - 160px + 10px) !important;
+    width: 130px !important;
+  }
+  #rec2487446103 .tn-elem[data-elem-id="1782315588274000002"] {
+    left: calc(50% - 160px + 10px) !important;
+    width: 130px !important;
+  }
+}
+
+
