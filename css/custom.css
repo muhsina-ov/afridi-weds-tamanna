@@ -28,13 +28,18 @@
 }
 
 /* Hero Couple Names Reframed in Royal Maroon */
-#rec2487446043 .tn-elem[data-elem-id="1763402147625"] {
+#rec2487446043 .tn-elem[data-elem-id="1763402147625"],
+#rec2487446043 .tn-elem.t-animate[data-elem-id="1763402147625"],
+#rec2487446043 .tn-elem.t-animate_started[data-elem-id="1763402147625"],
+#allrecords #rec2487446043 .tn-elem[data-elem-id="1763402147625"] {
   width: 92% !important;
   max-width: 600px !important;
-  left: 0 !important;
-  right: 0 !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
+  left: 50% !important;
+  right: auto !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  transform: translateX(-50%) !important;
+  -webkit-transform: translateX(-50%) !important;
   text-align: center !important;
   top: 250px !important;
   height: auto !important;
@@ -46,6 +51,7 @@
   color: #5a0f1b !important;
   width: 100% !important;
   white-space: normal !important;
+  display: block !important;
 }
 
 #rec2487446043 .hero-groom-name,
@@ -56,6 +62,8 @@
   font-size: 56px !important;
   line-height: 1.05 !important;
   text-align: center !important;
+  width: 100% !important;
+  display: block !important;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.4);
 }
 
@@ -67,6 +75,8 @@
   line-height: 1.1 !important;
   margin: 4px 0 !important;
   text-align: center !important;
+  width: 100% !important;
+  display: block !important;
   opacity: 0.95;
 }
 
@@ -91,8 +101,18 @@
     font-size: 24px !important;
     margin: 2px 0 !important;
   }
-  #rec2487446043 .tn-elem[data-elem-id="1763402147625"] {
+  #rec2487446043 .tn-elem[data-elem-id="1763402147625"],
+  #rec2487446043 .tn-elem.t-animate[data-elem-id="1763402147625"],
+  #rec2487446043 .tn-elem.t-animate_started[data-elem-id="1763402147625"],
+  #allrecords #rec2487446043 .tn-elem[data-elem-id="1763402147625"] {
     top: 245px !important;
+    left: 50% !important;
+    right: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    width: 92% !important;
   }
 }
 
