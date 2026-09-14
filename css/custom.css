@@ -96,44 +96,36 @@ html {
   }
 }
 
-/* Fix Ceremony Venues Subtitle Spacing and Alignment on Mobile */
+/* Fix Ceremony Venues Subtitle Spacing and Alignment (Never Overlap) */
 #rec2487446153 .tn-elem[data-elem-id="1772804808869"] {
-  width: 90% !important;
-  max-width: 380px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
+  width: 92% !important;
+  max-width: 400px !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   text-align: center !important;
-  top: 108px !important;
+  top: 106px !important;
+  height: auto !important;
+  display: block !important;
 }
 
 #rec2487446153 .tn-elem[data-elem-id="1772804808869"] .tn-atom {
-  font-size: 18px !important;
-  line-height: 1.3 !important;
   text-align: center !important;
-  white-space: nowrap !important;
+  width: 100% !important;
+  white-space: normal !important;
 }
 
 #rec2487446153 .tn-elem[data-elem-id="1772813480591000001"] {
-  width: 90% !important;
-  max-width: 380px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  text-align: center !important;
-  top: 138px !important;
-}
-
-#rec2487446153 .tn-elem[data-elem-id="1772813480591000001"] .tn-atom {
-  font-size: 15px !important;
-  line-height: 1.3 !important;
-  text-align: center !important;
-  white-space: nowrap !important;
+  display: none !important;
 }
 
 @media screen and (max-width: 480px) {
-  #rec2487446153 .tn-elem[data-elem-id="1772804808869"] .tn-atom {
-    font-size: 16px !important;
+  #rec2487446153 .tn-elem[data-elem-id="1772804808869"] .tn-atom div:first-child {
+    font-size: 18px !important;
   }
-  #rec2487446153 .tn-elem[data-elem-id="1772813480591000001"] .tn-atom {
-    font-size: 14px !important;
+  #rec2487446153 .tn-elem[data-elem-id="1772804808869"] .tn-atom div:last-child {
+    font-size: 15px !important;
   }
 }
+
