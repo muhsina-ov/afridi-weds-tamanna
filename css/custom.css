@@ -253,5 +253,44 @@ html {
   }
 }
 
+/* Countdown Timer Section Styling (Royal Maroon #5a0f1b) */
+#rec2487446093 .tn-elem[data-elem-id="1771277026942000001"] {
+  width: 92% !important;
+  max-width: 560px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  -webkit-transform: translateX(-50%) !important;
+  text-align: center !important;
+  top: 24px !important;
+}
 
+#rec2487446093 .tn-elem[data-elem-id="1771277026942000001"] .tn-atom {
+  color: #5a0f1b !important;
+  text-align: center !important;
+  width: 100% !important;
+  font-family: 'NewFonts', Arial, sans-serif !important;
+}
 
+#rec2487446093 .tn-elem[data-elem-id="1771277551711000001"] {
+  width: 94% !important;
+  max-width: 500px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  -webkit-transform: translateX(-50%) !important;
+  top: 86px !important;
+  height: auto !important;
+}
+
+@media screen and (max-width: 480px) {
+  #rec2487446093 .tn-elem[data-elem-id="1771277026942000001"] {
+    top: 20px !important;
+  }
+  #rec2487446093 .tn-elem[data-elem-id="1771277026942000001"] .tn-atom {
+    font-size: 34px !important;
+    line-height: 1.25 !important;
+  }
+  #rec2487446093 .tn-elem[data-elem-id="1771277551711000001"] {
+    top: 80px !important;
+    width: 98% !important;
+  }
+}
